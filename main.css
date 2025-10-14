@@ -1,31 +1,42 @@
 html {
-    font-size: 30px;
-}
+      
+} 
 
 body {
-    color: aliceblue;
-    background-color: black;
+    color:crimson ;
+    background: papayawhip;
+    line-height: 1.5;
+}
+
+main {
+    
+}
+
+button, input, textarea, select {
+    font: inherit;
 }
 
 h1 {
-    font-size: 40px;
-   color: aquamarine;
-   border: 2px;
-   border-radius: 2px;
-   border-style:ridge;
-   border-color: azure;
+    
+   color: rgb(251, 127, 255);
+   border: 2px solid rgba(0, 0, 0, 0.7);
+   width: 100%;
+   font-size: 5em;
 }
 
 .hello {
-    color: burlywood;
+    color: rgb(253, 145, 3);
+    font-size: 3em;
+    
 }
 
 p {
-    font-size: 25px;
+    font-size: 2rem;
+
 }
 
 .p1,.p2,.p3 {
-    color: gray;
+    color: #333333;
 }
 
 #second {
@@ -34,5 +45,8 @@ p {
 
 .span1 {
     text-transform: uppercase;
-    background-color: gold;
+    background-color: rgb(255, 215, 0);
 }
+
+[!importnat used for some ]
+
