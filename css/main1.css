@@ -1,11 +1,15 @@
-html {
-      
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;      
 } 
 
 body {
     color:crimson ;
     background: papayawhip;
     line-height: 1.5;
+    
+    min-height: 100vh;
 }
 
 main {
@@ -21,7 +25,8 @@ h1 {
    color: rgb(251, 127, 255);
    border: 2px solid rgba(0, 0, 0, 0.7);
    width: 100%;
-   font-size: 5em;
+   font-size: 3em;
+   padding: 0.5em;
 }
 
 .hello {
@@ -31,12 +36,13 @@ h1 {
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1rem;
 
 }
 
 .p1,.p2,.p3 {
     color: #333333;
+    width: 40ch;
 }
 
 #second {
@@ -46,6 +52,11 @@ p {
 .span1 {
     text-transform: uppercase;
     background-color: rgb(255, 215, 0);
+}
+
+.sumbit {
+    font-size: 3rem;
+    padding: 0.5em;
 }
 
 [!importnat used for some ]
