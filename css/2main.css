@@ -1,0 +1,43 @@
+/*
+Typography is the way that text is arranged and presented
+*/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+body {
+    padding: 10%;
+    font-size: 1rem;
+    background-color: black;
+    color: aliceblue;
+    /* font-family: sans-serif; */
+    /* font-family: monospace; */
+    /* font-family: fantasy; */
+    /* font-family: cursive; */
+/*     font-family: 'Times New Roman', Times, serif;                                                              
+ */
+ /* font-family: Arial, Helvetica, sans-serif;   */
+  
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+  
+  
+
+}
+/* if a font or any word have space in between like the courier new one then '' has to be used
+ */
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    text-decoration: none;/*used for link */
+   /*  text-transform: uppercase; */
+   /* text-align: right; */
+   /* text-indent: 2em; */
+   /* use the auto search option for more like these */
+   line-height: 1.5;
+   /* letter-spacing: 0.1em; */
+   /* word-spacing: 0.5em; */
+}
+
+
+
