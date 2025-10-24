@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0.5 rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+nav {
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 300px;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+h2 {
+    padding: 1rem;
+    background: gold;
+    border-radius: 2rem 2rem 0 0;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border-top: 1px solid #333;
+}
+
+li a {
+    display: block; /* to take the whole space and not the area just on the text for colour change and also link applies to the whole area */
+}
+
+li a, 
+li a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover,
+li a:focus {
+    background-color: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+/* round corner for last about one */
+/* Can use both of them last one only for last and this one for any one in theree */
+
+li:nth-child(5) a {
+    border-radius: 0 0 2rem 2rem;
+}
+/* li:last-child a {
+    border-radius: 0 0 2rem 2rem;
+} */
+
+/* end for this class more in 2 */

@@ -1,0 +1,33 @@
+/* New one but use the same html page so class 10 start -- */
+
+body {
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+
+
+p {
+    background-color: lightgray;
+   
+}
+
+.opposite {
+    display: inline-block; /* its a hybrid which keeps content inline and also use the code of block in it like the hight and margin one.  */
+    /* Where it can be used- turn link into a button and also turning a list into a row or etc*/
+    /* display: block; */
+    background-color: #333;
+    color: whitesmoke;
+  /*   margin-top: 100px;
+    height: 200px; *//* But these can be used when added display as inline block element. */
+  /*   margin: 100px;
+    height: 100px; */ /* Cant add these to a inline element. without block inline one they will not apply. */
+    padding: 1rem;
+}
+
+
+/* See for the list noww */
+
+ul {
+    
+}

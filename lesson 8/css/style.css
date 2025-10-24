@@ -1,0 +1,72 @@
+body {
+    font-size: 2rem;
+}
+
+
+a {
+    text-decoration: none;/* Use to underline or none or etc */
+    cursor: pointer;
+    color: burlywood;
+    /* can use same colour as other text and just leave it underlined, also visited is it used much so also can avoid it to use */
+    /* or can also use in the visited make some change in that colour so that it just glows or etc like apple does(change only first number) */
+    /* another can also use opacity properity for same colour or can add in the colour code only like 0.9 in the end. */
+    /* opacity can also be used anywhere in the text so use it carefully */
+    
+}
+
+a:visited {
+    color: coral;
+    text-decoration: none;
+    opacity: 0.9;
+}
+ 
+a:hover, a:focus {
+    color: brown;
+    text-decoration: none;
+    background: gold;/* use as a background */
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+/* a:etc is more specifc(specificity) than a or same in other cases also but visited hover and active doesnt have this specificity so  need to be put in this correct order only to work correctly.*/
+
+
+
+
+ol {
+    /* list-style-type:disc; */
+    list-style-type: lower-alpha;
+    /* list-style-type: none; */
+    /* padding: 0; */
+    /* see html for this */
+}
+
+ul {
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blueviolet;
+    line-height: 1.6;
+    /* list-style: square url("../images/main.png") inside; */
+    /* list-style-image: url("../images/main.png"); */
+}
+
+li {
+    color: brown;
+}
+
+ul li:nth-child(2) { /* can also add odd,even etc inplace of 2 */
+    color: blueviolet;
+    /* other styles can also be added */
+}
+
+ul ::marker { /* keep the text colour red and make points black */
+
+    color: red;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Onlyy "; /* not able to use on ipad....safari */
+}
