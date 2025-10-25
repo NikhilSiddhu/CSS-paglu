@@ -1,0 +1,36 @@
+ body {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+ }
+
+ .block {
+    width: 30vw;
+    height: 30vw;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+  /*   border-radius: 50%; */
+ }
+
+ .left {
+    float: left;
+    margin-right: 1rem;
+ }
+
+ .right {
+    float: right;
+    margin-left: 1rem;
+ }
+
+.clear {
+    clear: both;
+} 
+
+
+section {
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+    /* overflow: auto; same does as the below one. Makes the text and background to take the whole place as the float takes for the square and  the text with next para from the new starrt or check it by undoing and doing it.  */
+    display: flow-root;
+}

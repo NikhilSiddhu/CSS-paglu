@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+/* for part 1 */
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vw;
+    margin: 40px auto;
+    position: relative; /* makes this the absolut postion for others in this and doesnt follow the default for the browser. */
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 100px auto;
+   /*  position: relative; */ /* Can be set more than one and it chooses the one which is nearer to the one in which it is set to absolute. */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: #00f;
+   /*  position: static; default value*/
+   position: absolute;
+   top: 0;
+   left: 0;
+   /* left: -100000px; */ /* if need to remove something form the page but need to be one the code as active so can use the dimensions like left -1000000px to hide it form the screen. */
+   z-index: 1; /* changed (the postion of ab and fixed one) and also if want to do so then also postion it as absolute and then do it */
+}
+
+.relative {
+    background-color: red;
+    position: relative; /* if set here then its always going to be relative to its parrent contianer and not like the absolute one so inside the one parent cotainer only. */
+    top: 300px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: green;
+    position: fixed; /* Will get fixed on the screen even if you scroll */
+    top: 100px;
+}
+/* here like fixed element is over coming the absolute one which is because their written format in the html like here absolute was written before in the code in html followd by the fixed one and so on and same follow by the relative one but this can also be changed by css as you can see above which is mentioned as changed */
+
+
+.sticky {
+    background-color: black;
+    position: sticky; /* make the box stuck at top untile the end of parent column or box comes and then scrolls away unlike the fixed wone which moves till the last */
+    top: 0;
+} 
+
+
+/* part 2 starts -- */

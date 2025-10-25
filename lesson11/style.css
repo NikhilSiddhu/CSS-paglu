@@ -1,0 +1,50 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    
+}
+ */
+body {
+    font-size: 1.5rem;
+}
+
+.col {
+  /*   column-count: 4;
+     /* If added with column width then it adds upto 4 columns and in area less than 250 px or the number specified for each column it decrerases the number or the width of each column remains same and all depends on the sizing of the window how many tabs are gonna be shown. *
+    column-width: 250px; /* help to arrange the words in paras*
+    can use these two differentlu or in the same as next....
+    */ 
+    columns: 4 250px;
+    column-rule: 3px solid  #333; /* sae as border and also values go in the same format only. */
+    column-gap: 3rem;
+}
+
+.col p {
+    margin-top: 0;/* margin collapse happen mean in two continious ones it takes like takes the value of upper and lower and merges. */
+}
+
+.col h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    /* problem coming - this heading have if on that screen type the colour below the text shif tsto the next page and seems as a glitch to prevent it use-- */
+    break-inside: avoid;
+    /* problem 2 -- the heading is coming on the bottom of 1st column for the 2nd para so to prevent it and shit it to the next column use-- */
+ /*    break-before: column;
+    /* but a problem comes and it shrinks so dont use it in this case  **/
+
+}
+
+/* if you apply just .quote it has less specificity than the other one we have applied ablove in which marign as zero so we need to be more specific which we can be by like .column .quote which is more specific than the .col p bec in 2nd it doest have . which results in increasing the specificity. */
+.col .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+}
+/* situation now is that if you need to take the dude in one line togehter and not like shifting it away one by one in the next so take the dude into a span and then do the below..property name nowrap. */
+.nowrap {
+    white-space: nowrap;
+}
