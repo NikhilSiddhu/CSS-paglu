@@ -36,7 +36,7 @@ body {
    flex-direction: row;
 
    /* Problem coming that while resizing the box are not sizing and floating out of the section which need to be fixed by the option of flex wrap to wrap which shifts it to down*/
-   flex-wrap: nowrap; /* Changed it from wrap to no wrap for below 2nd one */
+   flex-wrap: wrap; /* Changed it from wrap to no wrap for below 2nd one */
 
    /* for using flex direction and flex wrap seperately one can be used as single as shown */
 
@@ -57,13 +57,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    flex-shrink: 1; /* use grow and shrink here as same */
-    flex-basis: 200px;
-    /* As we have set here the flex basis 100px so the boxes are not gonna take the whole space by start as flex grow 1 or 2 but first they take those 100px and then they are gonna divide left into 1:2 */ }
-
-.box:nth-child(2) {
-    flex-shrink: 2;
+/* 
+    flex-grow: 1; /* use grow and shrink here as same *
+    flex-basis: 100px;
+    /* As we have set here the flex basis 100px so the boxes are not gonna take the whole space by start as flex grow 1 or 2 but first they take those 100px and then they are gonna divide left into 1:2  **/
+/* Or can use like this */ 
+    flex: 1 1 100px;
 }
 
-/* not able to use flex shrink check it .. */
+.box:nth-child(2) {
+    /* flex-grow: 2; */
+    flex: 2 2 100px;
+   /*  order: -1; Define postition mean 1 or 0 or 4 take as the expnonential value */
+}
+
+/* not able to use flex shrink check it .. even after trying (problemm) */
+
+/* All other practice for flex box done on flexboxfoggy.com all 24 levels */
