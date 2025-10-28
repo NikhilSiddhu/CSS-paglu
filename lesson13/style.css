@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px; 
+    margin-inline: auto;
+    border: 1px solid #000;
+    /* flex from here */
+    display: flex;
+    gap: 1rem;
+    justify-content: /* space-evenly can be used but gonna use */ center; 
+    /* 5.And best that is used is space evenly which you understand by it */
+    
+    /* 4.Can use space between for setting no gap at end and start and just in between */
+
+    /* 3.Can use space around to set them eventy divied if also not using the gap command  */
+    
+    /* 2.Centre is often used in the justify content one but other can also be used */
+    
+    /* 1.flex end for go to last and set if want to set then also use for the flex start */
+    align-items: center; 
+    /* 4.It changes and can be use for both verticla and horixzontal and depends the flex dorecton  */
+    /* 3.Same values as flex end start and only centre */
+    /* 2.Used to allign them verticallly all the box that you are using here, can change their positon as vertically. */
+   /* 1. flex-direction: row; Defalt set for flex and puts all the boxes in the horizontal format */
+   flex-direction: row;
+
+   /* Problem coming that while resizing the box are not sizing and floating out of the section which need to be fixed by the option of flex wrap to wrap which shifts it to down*/
+   flex-wrap: wrap; /* Changed it from wrap to no wrap for below 2nd one */
+
+   /* for using flex direction and flex wrap seperately one can be used as single as shown */
+
+   flex-flow: row wrap ; /* but first is the drection - row and then is teh wrap (should follow the same format) */
+
+   align-content: space-evenly;/* Havew other you can see space evenly and other ones */
+}
+
+.box {
+    height: 100px;
+    /* min-width: 100px; */ /* IN pace of it u can use comment flex basis */
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    /* Start here for flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* 
+    flex-grow: 1; /* use grow and shrink here as same *
+    flex-basis: 100px;
+    /* As we have set here the flex basis 100px so the boxes are not gonna take the whole space by start as flex grow 1 or 2 but first they take those 100px and then they are gonna divide left into 1:2  **/
+/* Or can use like this */ 
+    flex: 1 1 100px;
+}
+
+.box:nth-child(2) {
+    /* flex-grow: 2; */
+    flex: 2 2 100px;
+   /*  order: -1; Define postition mean 1 or 0 or 4 take as the expnonential value */
+}
+
+/* not able to use flex shrink check it .. even after trying (problemm) */
+
+/* All other practice for flex box done on flexboxfoggy.com all 24 levels */
